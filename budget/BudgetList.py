@@ -1,3 +1,4 @@
+from operator import concat
 from . import Expense
 
 
@@ -28,7 +29,7 @@ def main():
     for expense in expenses.list:
         myBudgetList.append(expense.amount)
 
-    print(f"The count of all expenses: {len(myBudgetList)}")
+    print(concat("The count of all expenses: ", str(len(myBudgetList))))
 
 
 if __name__ == "__main__":
